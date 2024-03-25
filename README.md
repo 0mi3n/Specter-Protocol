@@ -5,6 +5,8 @@
   />
 </div>
 
+<br>
+
 <div>
   <a href="https://specter-eth.neocities.org/" target="_blank" style="display: inline-block; margin-right: 20px;"><img src="https://img.shields.io/badge/Website-black" /></a>
   <a href="https://specter-eth.gitbook.io/specter" target="_blank" style="display: inline-block; margin-right: 20px;"><img src="https://img.shields.io/badge/Gitbook-black" /></a>
