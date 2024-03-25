@@ -65,5 +65,5 @@ be as simple as clicking a button.
   </a>
 </p>
 
-By integrating Tor into your platform, in a **[Bisq](https://bisq.network/)** similar fashion, we further enhance user privacy and security by routing network communications through a decentralized network of volunteer-run servers. This integration ensures that users' IP addresses are masked, providing anonymity and resistance to network surveillance.
+By integrating Tor into our protocol, in a **[Bisq](https://bisq.network/)** similar fashion, we further enhance user privacy and security by routing network communications through a decentralized network of volunteer-run servers. This integration ensures that users' IP addresses are masked, providing anonymity and resistance to network surveillance.
 
