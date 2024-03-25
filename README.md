@@ -46,7 +46,7 @@ privacy maximalist as well as the traditional user.
 
 The simplest application we can build on Specter is a private vault that lets you store your
 assets long-term, earn yield on idle assets, and withdraw to burner wallets for high-touch
-activities like trading, all without exposing your address or net balances. T
+activities like trading, all without exposing your address or net balances. 
 
 ## Backend for Private Payments
 
