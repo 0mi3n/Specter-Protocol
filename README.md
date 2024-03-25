@@ -36,8 +36,11 @@ address (check out our [Gitbook](https://specter-eth.gitbook.io/specter) to see 
 which end-user products can be easily built. Given this flexibility, we can cater to both the
 privacy maximalist as well as the traditional user.
 
-<img src="./img/Anonymous Dex Swap.png" alt="Protocol flow example: Swapping ETH for DAI">
-<sub>Protocol flow example: Swapping ETH for DAI</sub>
+<div align="center">
+  <img src="./img/Anonymous Dex Swap.png" alt="Protocol flow example: Swapping ETH for DAI">
+  <br>
+  <sub style="font-size: larger; text-align: center;">Protocol flow example: Swapping ETH for DAI</sub>
+</div>
 
 ## Private Vault
 
