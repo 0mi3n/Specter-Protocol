@@ -13,7 +13,7 @@
   <a href="https://twitter.com/eth_specter" target="_blank" style="display: inline-block;"><img src="https://img.shields.io/twitter/follow/eth_specter" /></a>
 </div>
 
-### Introducing Specter
+## Introducing Specter
 
 For crypto to reach its next stage of growth, it must be used less as a means of speculation and
 evolve to become more like money—a reliable medium of exchange and store of wealth.
@@ -27,7 +27,7 @@ remains a fringe category. To tackle this issue, we see two paths toward adoptio
 unmet needs of the privacy-conscious and integrate privacy into existing applications for the
 average user.
 
-### Our Approach
+## Our Approach
 
 Specter is a highly composable protocol for private accounts on Ethereum. Using a mix of
 account abstraction and zero-knowledge proofs, we’ve built a private account layer that
@@ -39,13 +39,13 @@ privacy maximalist as well as the traditional user.
 <img src="./img/Anonymous Dex Swap.png" alt="Protocol flow example: Swapping ETH for DAI">
 <sub>Protocol flow example: Swapping ETH for DAI</sub>
 
-### Private Vault
+## Private Vault
 
 The simplest application we can build on Specter is a private vault that lets you store your
 assets long-term, earn yield on idle assets, and withdraw to burner wallets for high-touch
 activities like trading, all without exposing your address or net balances. T
 
-### Backend for Private Payments
+## Backend for Private Payments
 
 Instead of making payments directly to a recipient's EOA and exposing their financial history,
 one can simply send funds into Specter and set their owner to the recipient’s stealth address.
@@ -54,7 +54,7 @@ want the whole world to know their salary. By integrating Specter into existing 
 products, if you are a company administrator, keeping your employees’ salaries private will
 be as simple as clicking a button.
 
-### Integration with Tor
+## Integration with Tor
 
 <p>
   <a href="https://www.torproject.org/" target="_blank">
