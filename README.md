@@ -1,14 +1,18 @@
-
 <div align="center">
   <img
     alt="Specter Logo"
     src="./img/specter.png"
   />
 </div>
-
 <p>
   <a href="https://specter-eth.neocities.org/" target="_blank">
-    <img src="https://img.shields.io/badge/Website-purple" />
+    <img src="https://img.shields.io/badge/Website-black" />
+  </a>
+</p>
+
+<p>
+  <a href="https://specter-eth.gitbook.io/specter" target="_blank">
+    <img src="https://img.shields.io/badge/Gitbook-black" />
   </a>
 </p>
 
@@ -37,7 +41,7 @@ average user.
 Specter is a highly composable protocol for private accounts on Ethereum. Using a mix of
 account abstraction and zero-knowledge proofs, we’ve built a private account layer that
 enables users to send, receive, and transact with their funds, all without exposing their
-address (check out our Litepaper to see how it works). It is designed as a generic system upon
+address (check out our Gitbook to see how it works). It is designed as a generic system upon
 which end-user products can be easily built. Given this flexibility, we can cater to both the
 privacy maximalist as well as the traditional user.
 
