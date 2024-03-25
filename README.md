@@ -41,7 +41,7 @@ address (check out our Litepaper to see how it works). It is designed as a gener
 which end-user products can be easily built. Given this flexibility, we can cater to both the
 privacy maximalist as well as the traditional user.
 
-<img src="./img/Anonymous Dex Swap.png" alt="Protocol flow example: Swapping ETH for DAI" width="960" height="540">
+<img src="./img/Anonymous Dex Swap.png" alt="Protocol flow example: Swapping ETH for DAI" width="800" height="500">
 <sub>Protocol flow example: Swapping ETH for DAI</sub>
 
 ### Private Vault
