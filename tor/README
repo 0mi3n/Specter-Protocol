@@ -1,0 +1,17 @@
+tortunnel is a partial Onion Proxy implementation that's designed to build single-hop circuits through Tor exit nodes. This is useful in cases where you might want some very low level of anonymity and don't want to deal with the performance implications of using Tor's full three-hop circuits.
+
+tortunnel exposes itself both as a SOCKS interface, as well as a fairly clean asynchronous C++ API to the Tor protocol itself. It was first written as a scanning tool for checking to see whether exit nodes were running sslstrip, and is well suited for implementing other high-performance scanning routines against the Tor network as a whole.
+
+It might also be useful for implementing a perspectives-like interface for checking SSL, SSH, or other host certificates. It could be useful as an nmap scanning mode, or perhaps for something else entirely.
+
+To expose a SOCKS interface on localhost:5060 to a random one-hop Tor exit node, run:
+
+torproxy -p 5060 -r
+
+To expose a SOCKS interface on localhost:5060 to a specific Tor exit node IP address, run:
+
+torproxy -p 5060 -n <ip>
+
+These commands will open a SOCKS interface on localhost:5060, which you can then point applications which support SOCKS proxies to. Be careful, though, remember that this is not useful for anything approaching strict anonymity requirements. 
+
+To see if it works, you can try a "curl --socks5 localhost:5060 ifconfig.me" and compare it with the output of "curl ifconfig.me".
