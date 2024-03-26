@@ -1,0 +1,23 @@
+[package]
+name = "chain-events"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# === Concurrency + Runtime === #
+crossbeam = { workspace = true }
+tokio = { workspace = true }
+
+# === Crypto === #
+ethers = { workspace = true }
+
+# === Workspace Dependencies === #
+circuit-types = { path = "../../circuit-types" }
+common = { path = "../../common" }
+gossip-api = { path = "../../gossip-api" }
+job-types = { path = "../job-types" }
+state = { path = "../../state" }
+
+# === Misc Dependencies === #
+lazy_static = "1.4"
+tracing = { workspace = true }
