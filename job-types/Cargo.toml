@@ -1,0 +1,27 @@
+[package]
+name = "job-types"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# === Cryptography === #
+ark-mpc = { workspace = true }
+
+# === Networking === #
+libp2p = { workspace = true, features = ["request-response"] }
+libp2p-core = { workspace = true }
+
+# === Workspace Dependencies === #
+circuits = { path = "../../circuits" }
+circuit-types = { path = "../../circuit-types" }
+common = { path = "../../common" }
+constants = { path = "../../constants" }
+gossip-api = { path = "../../gossip-api" }
+
+# === Misc === #
+crossbeam = { workspace = true }
+tokio = { workspace = true }
+uuid = { version = "1.1.2", features = ["v4", "serde"] }
+
+[dev-dependencies]
+lazy_static = "1.4"
