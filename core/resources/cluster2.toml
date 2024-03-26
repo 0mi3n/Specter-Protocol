@@ -1,0 +1,9 @@
+p2p-port = 8002 
+http-port = 3002
+websocket-port = 4002
+version = 0
+wallet-file = "./core/resources/wallets2.json"
+
+# A base64 encoded dummy keypair
+cluster-public-key = "Ny3zHyKDIpoVwFtAZda9aiavMECEdreTQmO1UDN6RZ8="
+cluster-private-key = "BpLAiCutcO0svpbcM252KwoCMaMW41HD/VLSchyFkkg="
