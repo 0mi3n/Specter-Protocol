@@ -1,0 +1,43 @@
+[package]
+name = "circuit-types"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+test-helpers = ["mpc-plonk/test-srs"]
+
+[dependencies]
+# === Crytography === #
+ark-bn254 = "0.4"
+ark-ff = "0.4"
+ark-ec = "0.4"
+ark-mpc = { workspace = true }
+ark-serialize = "0.4"
+jf-primitives = { workspace = true, features = ["std", "parallel"] }
+k256 = { version = "0.13", features = ["expose-field"] }
+mpc-plonk = { workspace = true }
+mpc-relation = { workspace = true }
+
+# === Arithmetic === #
+bigdecimal = "0.3"
+num-bigint = { version = "0.4", features = ["rand", "serde"] }
+rand = "0.8"
+
+# === Async + Runtime === #
+async-trait = "0.1"
+futures = { workspace = true }
+
+# === Workspace Crates === #
+circuit-macros = { path = "../circuit-macros" }
+constants = { path = "../constants" }
+
+# === Misc === #
+byteorder = "1.5"
+itertools = "0.10"
+lazy_static = "1.4"
+serde = { version = "1.0.139", features = ["serde_derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+test-helpers = { path = "../test-helpers" }
+tokio = { workspace = true }
