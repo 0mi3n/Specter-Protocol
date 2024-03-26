@@ -1,0 +1,48 @@
+[package]
+name = "api-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# === Cryptography + Arithmetic === #
+k256 = "0.13"
+num-bigint = { workspace = true }
+num-traits = "0.2"
+
+# === HTTP + Websocket === #
+hyper = { version = "0.14", features = ["http1", "http2", "server", "tcp"] }
+matchit = "0.7"
+tokio-stream = "0.1"
+tokio-tungstenite = { version = "0.18", features = ["native-tls"] }
+tungstenite = "0.18"
+
+# === Runtime + Concurrency === #
+crossbeam = { workspace = true }
+futures = { workspace = true }
+futures-util = "0.3"
+tokio = { workspace = true }
+
+# === Workspace Dependencies === #
+circuit-types = { path = "../../circuit-types" }
+common = { path = "../../common" }
+constants = { path = "../../constants" }
+external-api = { path = "../../external-api" }
+gossip-api = { path = "../../gossip-api" }
+job-types = { path = "../job-types" }
+state = { path = "../../state" }
+system-bus = { path = "../../system-bus" }
+util = { path = "../../util" }
+
+# === Misc Dependencies === #
+async-trait = "0.1.60"
+base64 = "0.21"
+itertools = "0.11"
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+uuid = "1.1.2"
+
+[dev-dependencies]
+ecdsa = "0.16"
+rand = { workspace = true }
+util = { path = "../../util" }
