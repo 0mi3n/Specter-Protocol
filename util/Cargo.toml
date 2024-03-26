@@ -1,0 +1,52 @@
+[package]
+name = "util"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# === Arithmetic === #
+ark-ec = "0.4"
+ark-serialize = "0.4"
+num-bigint = "0.4"
+num-traits = "0.2"
+
+# === Networking === #
+libp2p = { workspace = true }
+
+# === Runtime === #
+futures = { workspace = true }
+tokio = { workspace = true }
+
+# === Workspace Dependencies === #
+circuit-types = { path = "../circuit-types" }
+constants = { path = "../constants" }
+renegade-crypto = { path = "../renegade-crypto" }
+
+# === Misc === #
+eyre = { workspace = true }
+hex = "0.4"
+json = "0.12"
+
+# === Logs / Traces === #
+chrono = "0.4"
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-serde = "0.1"
+tracing-subscriber = { vesion = "0.3", features = ["env-filter", "json"]}
+tracing-opentelemetry = "0.22"
+opentelemetry_sdk = { version = "0.21", features = ["trace", "rt-tokio"] }
+opentelemetry-otlp = "0.14"
+opentelemetry = { version = "0.21", default-features = false, features = ["trace"]}
+opentelemetry-semantic-conventions = "0.13"
+opentelemetry-datadog = "0.9"
+
+# === Metrics === #
+metrics = { workspace = true }
+metrics-util = "0.16"
+metrics-exporter-statsd = "0.7"
+metrics-tracing-context = "0.15"
+
+[dev-dependencies]
+lazy_static = "1.4"
+rand = "0.8"
