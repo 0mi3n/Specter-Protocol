@@ -1,0 +1,27 @@
+[package]
+name = "gossip-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# === Async + Concurrency === #
+futures = { workspace = true }
+tokio = { workspace = true }
+
+# === Networking === #
+libp2p = { workspace = true }
+
+# === Workspace Dependencies === #
+circuits = { path = "../../circuits" }
+circuit-types = { path = "../../circuit-types" }
+common = { path = "../../common" }
+gossip-api = { path = "../../gossip-api" }
+job-types = { path = "../job-types" }
+state = { path = "../../state" }
+util = { path = "../../util" }
+
+# === Misc Dependencies === #
+itertools = { workspace = true }
+lru = "0.11"
+tracing = "0.1"
+metrics = { workspace = true }
