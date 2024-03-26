@@ -1,0 +1,39 @@
+[package]
+name = "test-helpers"
+version = "0.1.0"
+edition = "2021"
+description = "Helpers for setting up and running integration tests for the relayer"
+
+[dependencies]
+# === Runtime + Networking === #
+async-trait = "0.1"
+dns-lookup = "1.0"
+futures = { workspace = true }
+tokio = { workspace = true }
+
+# === Node Interaction === #
+reqwest = "0.11.13"
+
+# === Cryptography + Arithmetic === #
+ark-mpc = { workspace = true }
+ark-ec = "0.4"
+num-bigint = { version = "0.4", features = ["rand"] }
+k256 = { version = "0.13" }
+
+# === Ethereum Utils === #
+alloy-primitives = "0.3.1"
+alloy-sol-types = "0.3.1"
+ethers = { workspace = true }
+
+# === Workspace Dependencies === # 
+circuit-types = { path = "../circuit-types" }
+common = { path = "../common", features = ["mocks"] }
+constants = { path = "../constants" }
+
+# === Misc Dependencies === #
+itertools = "0.10.5"
+eyre = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
