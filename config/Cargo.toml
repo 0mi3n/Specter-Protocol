@@ -1,0 +1,31 @@
+[package]
+name = "config"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# === Networking === #
+libp2p = { workspace = true }
+
+# === Workspace Dependencies === #
+circuit-types = { path = "../circuit-types" }
+colored = "2.0"
+common = { path = "../common" }
+util = { path = "../util" }
+
+# === Misc Dependencies === #
+base64 = "0.13"
+bimap = "0.6.2"
+clap = { version = "4.4", features = ["derive"] }
+ed25519-dalek = { version = "1.0.1", features = ["serde"] }
+ethers = { workspace = true }
+json = "0.12"
+rand_core = "0.5"
+reqwest = { verison = "0.11", features = ["blocking"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+toml = "0.5.9"
+
+[dev-dependencies]
+tempfile = "3.9"
