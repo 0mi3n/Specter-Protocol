@@ -1,0 +1,32 @@
+services:
+  sequencer:
+    image: sequencer
+    ports:
+      - "8547:8547"
+    build:
+      context: ../../docker/sequencer
+      args:
+        - NO_VERIFY=1
+    attach: false
+    healthcheck:
+      test: curl -sf http://localhost:8547
+      interval: 1s
+      timeout: 5s
+      retries: 10
+
+  relayer:
+    image: task-driver-integration-test:latest
+    build:
+      context: ../..
+      dockerfile: workers/task-driver/Dockerfile
+    ports:
+      - "8000:8000"
+    command: >
+      cargo test --test integration --features "integration" --
+        --deployments-path /deployments.json
+        --devnet-url http://sequencer:8547
+        --verbosity full
+    tty: true
+    depends_on:
+      sequencer:
+        condition: service_healthy
