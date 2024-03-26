@@ -1,0 +1,63 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+mocks = [
+    "rand",
+    "jf-primitives",
+    "mpc-relation",
+    "mpc-plonk",
+    "ark-ec",
+    "ark-poly",
+    "k256/expose-field",
+    "ecdsa",
+]
+
+[dependencies]
+# === Cryptography + Arithmetic === #
+ark-mpc = { workspace = true }
+ark-ec = { version = "0.4", optional = true }
+ark-poly = { version = "0.4", optional = true }
+
+ecdsa = { version = "0.16", optional = true }
+ed25519-dalek = { version = "1.0.1", features = ["serde"] }
+ethers = { workspace = true }
+jf-primitives = { workspace = true, optional = true }
+k256 = { version = "0.13", features = ["ecdsa"] }
+mpc-plonk = { workspace = true, optional = true }
+mpc-relation = { workspace = true, optional = true }
+num-bigint = { workspace = true }
+num-traits = "0.2"
+signature = "2.0"
+
+# === Runtime + Networking === #
+crossbeam = { workspace = true }
+libp2p = { workspace = true }
+libp2p-identity = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+
+# === Workspace Dependencies === #
+circuits = { path = "../circuits" }
+circuit-types = { path = "../circuit-types" }
+constants = { path = "../constants" }
+util = { path = "../util" }
+
+# === Misc Dependencies === #
+base64 = { version = "0.13" }
+bimap = "0.6.2"
+derivative = "2.2"
+indexmap = { workspace = true }
+itertools = "0.10"
+lazy_static = "1.4"
+rand = { workspace = true, optional = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { version = "1.1.2", features = ["v4", "serde"] }
+metrics = { workspace = true }
+
+[dev-dependencies]
+rand_core = "0.5"
+rand = { workspace = true }
