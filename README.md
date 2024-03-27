@@ -59,11 +59,15 @@ be as simple as clicking a button.
 
 ## Integration with Tor
 
-<p>
-  <a href="https://www.torproject.org/" target="_blank">
-    <img src="https://img.shields.io/badge/Tor_Project-purple" />
-  </a>
-</p>
+<div align="left">
+  <img
+    alt="Specter Logo"
+    src="./img/tor.png"
+    width="200" 
+  />
+</div>
 
-By integrating Tor into our protocol, in a **[Bisq](https://bisq.network/)** similar fashion, we further enhance user privacy and security by routing network communications through a decentralized network of volunteer-run servers. This integration ensures that users' IP addresses are masked, providing anonymity and resistance to network surveillance.
+<br>
+
+By natively integrating **[Tor](https://www.torproject.org/)** into our protocol (In a **[Bisq](https://bisq.network/)** similar fashion), we further enhance user privacy and security by routing network communications through a decentralized network of volunteer-run servers. This integration ensures that users' IP addresses are hidden, providing anonymity and resistance to network surveillance.
 
