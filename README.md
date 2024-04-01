@@ -10,6 +10,7 @@
 <div>
   <a href="https://specter-eth.neocities.org/" target="_blank" style="display: inline-block; margin-right: 20px;"><img src="https://img.shields.io/badge/Website-black" /></a>
   <a href="https://specter-eth.gitbook.io/specter" target="_blank" style="display: inline-block; margin-right: 20px;"><img src="https://img.shields.io/badge/Gitbook-black" /></a>
+  <a href="https://medium.com/@specter-eth" target="_blank" style="display: inline-block; margin-right: 20px;"><img src="https://img.shields.io/badge/Medium-black" /></a>
   <a href="https://twitter.com/eth_specter" target="_blank" style="display: inline-block;"><img src="https://img.shields.io/twitter/follow/eth_specter" /></a>
 </div>
 
